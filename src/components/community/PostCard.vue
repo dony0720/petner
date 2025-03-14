@@ -18,6 +18,7 @@ interface PostCardProps {
 }
 
 const props = defineProps<PostCardProps>();
+console.log('likes', props.likes);
 const router = useRouter();
 
 // 카드 클릭 시 상세 페이지로 이동

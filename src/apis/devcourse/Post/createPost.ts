@@ -18,6 +18,7 @@ export async function createPost(request: CreatePostRequest): Promise<CreatePost
   if (request.image) {
     form.append('image', request.image);
   }
+  console.log(form);
   const response = await devAPI.post<devPost>(
     import.meta.env.VITE_API_BASE_URL + POST.create,
     form,
